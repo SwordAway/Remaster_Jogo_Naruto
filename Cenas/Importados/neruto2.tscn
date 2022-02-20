@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Cenas/Importados/imgs e afins/neruto.png" type="Texture" id=1]
+
+[node name="neruto2" type="Sprite"]
+position = Vector2( 1238.97, 402.763 )
+scale = Vector2( 0.33335, 0.289518 )
+texture = ExtResource( 1 )

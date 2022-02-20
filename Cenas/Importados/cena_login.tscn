@@ -1,0 +1,531 @@
+[gd_scene load_steps=33 format=2]
+
+[ext_resource path="res://fonts/njnaruto.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Cenas/Importados/script_login.gd" type="Script" id=2]
+[ext_resource path="res://Cenas/Importados/imgs e afins/acerta_shuriken.wav" type="AudioStream" id=3]
+[ext_resource path="res://Cenas/Importados/imgs e afins/GUI_Select_29 1 - selec person.wav" type="AudioStream" id=4]
+[ext_resource path="res://Cenas/Importados/imgs e afins/neruto.png" type="Texture" id=5]
+[ext_resource path="res://Cenas/Importados/imgs e afins/Tela de Bem Vindo.png" type="Texture" id=6]
+[ext_resource path="res://Cenas/Importados/imgs e afins/GUI_Notification 16 1 - usar para popup.wav" type="AudioStream" id=7]
+[ext_resource path="res://Cenas/Fonte/njnaruto.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://Cenas/Importados/imgs e afins/Naruto-Main-Theme-_Extended.wav" type="AudioStream" id=9]
+[ext_resource path="res://Cenas/Importados/Titulo.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Cenas/Importados/neruto2.tscn" type="PackedScene" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 25
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 0.4, 0, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_color = Color( 0.8, 0.8, 0.8, 0 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 50
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 25
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 0 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 0.4, 0, 0 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="DynamicFont" id=11]
+size = 25
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color( 1, 0.4, 0, 1 )
+border_blend = true
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 0.4, 0, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.996078, 0.443137, 0.0588235, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 0.4, 0, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 0.4, 0, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="DynamicFont" id=13]
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=17]
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_top = 4
+font_data = ExtResource( 8 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color( 1, 0.4, 0, 1 )
+border_blend = true
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 0.4, 0, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.996078, 0.443137, 0.0588235, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 0.701961 )
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color( 0.996078, 0.443137, 0.0588235, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="Animation" id=19]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Som:pressed")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=20]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Som:pressed")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="DynamicFont" id=21]
+outline_size = 2
+use_filter = true
+font_data = ExtResource( 8 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Login2" type="Sprite" parent="."]
+position = Vector2( 513.357, 299.448 )
+scale = Vector2( 1.39663, 1.24086 )
+texture = ExtResource( 6 )
+
+[node name="BemVindo" type="Sprite" parent="."]
+position = Vector2( 1547.11, 299.604 )
+scale = Vector2( 1.39663, 1.24086 )
+texture = ExtResource( 6 )
+
+[node name="lblemail" type="Label" parent="."]
+margin_left = 249.282
+margin_top = 228.0
+margin_right = 328.282
+margin_bottom = 257.0
+custom_fonts/font = SubResource( 1 )
+text = "email"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Barra_atras" type="Label" parent="."]
+margin_left = 351.094
+margin_top = 221.821
+margin_right = 701.094
+margin_bottom = 258.821
+custom_styles/normal = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEmail" type="LineEdit" parent="."]
+margin_left = 363.094
+margin_top = 221.821
+margin_right = 692.094
+margin_bottom = 258.821
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 3 )
+align = 3
+placeholder_text = "Exemplo: naruto@gmail.com"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblLogin" type="Label" parent="."]
+margin_left = 307.464
+margin_top = 83.1367
+margin_right = 716.464
+margin_bottom = 140.137
+custom_fonts/font = SubResource( 4 )
+text = "Tela    de   Login"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="neruto" type="Sprite" parent="lblLogin"]
+position = Vector2( 203.742, 399.418 )
+scale = Vector2( 0.33335, 0.289518 )
+texture = ExtResource( 5 )
+
+[node name="neruto2" parent="lblLogin" instance=ExtResource( 11 )]
+
+[node name="lblBemvindo" type="Label" parent="."]
+margin_left = 1409.46
+margin_top = 87.1367
+margin_right = 1818.46
+margin_bottom = 144.137
+custom_fonts/font = SubResource( 4 )
+text = "Bem   vindo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" type="Label" parent="lblBemvindo"]
+margin_left = 37.653
+margin_top = 94.4673
+margin_right = 446.653
+margin_bottom = 151.468
+custom_fonts/font = SubResource( 4 )
+text = "player"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lblsenha" type="Label" parent="."]
+margin_left = 249.282
+margin_top = 285.0
+margin_right = 324.282
+margin_bottom = 314.0
+custom_fonts/font = SubResource( 5 )
+text = "senha"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Barra_atras2" type="Label" parent="."]
+margin_left = 351.094
+margin_top = 278.823
+margin_right = 701.094
+margin_bottom = 315.823
+custom_styles/normal = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextSenha" type="LineEdit" parent="."]
+margin_left = 363.094
+margin_top = 278.823
+margin_right = 692.094
+margin_bottom = 315.823
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 6 )
+align = 3
+placeholder_text = "Exemplo: naruto1234"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 421.129
+margin_top = 354.111
+margin_right = 583.129
+margin_bottom = 401.111
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 0.968627, 0.647059, 0.333333, 1 )
+custom_fonts/font = SubResource( 11 )
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/disabled = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+text = "Entrar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -15.0
+
+[node name="Selec" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -10.0
+
+[node name="Press" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -10.0
+
+[node name="Som_popup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -10.0
+
+[node name="Barra_atras3" type="Label" parent="."]
+margin_left = 612.527
+margin_top = 326.0
+margin_right = 734.527
+margin_bottom = 348.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 2 )
+text = "     Mostrar senha"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckBox" type="CheckBox" parent="Barra_atras3"]
+margin_left = 4.0
+margin_top = -1.0
+margin_right = 112.0
+margin_bottom = 23.0
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cadastrar" type="Label" parent="."]
+margin_left = 344.094
+margin_top = 326.0
+margin_right = 599.094
+margin_bottom = 348.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 12 )
+text = "  Não possui uma conta ? "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LinkButton" type="LinkButton" parent="Cadastrar"]
+margin_left = 166.455
+margin_top = 4.15903
+margin_right = 241.455
+margin_bottom = 18.159
+mouse_default_cursor_shape = 0
+custom_colors/font_color = Color( 0.768627, 0.380392, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+text = "Cadastre-se"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PopupDialog" type="ColorRect" parent="."]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 155.094
+margin_top = 181.604
+margin_right = 855.094
+margin_bottom = 438.604
+color = Color( 0, 0, 0, 0.45098 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="PopupDialog"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -120.0
+margin_top = 53.0
+margin_right = 120.0
+margin_bottom = 72.0
+custom_fonts/font = SubResource( 13 )
+text = "Email   ou   Senha    Invalidos !!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Butt" type="Button" parent="PopupDialog"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -58.0
+margin_top = 124.0
+margin_right = 58.0
+margin_bottom = 149.0
+custom_colors/font_color_pressed = Color( 0.968627, 0.647059, 0.333333, 1 )
+custom_fonts/font = SubResource( 17 )
+custom_styles/hover = SubResource( 14 )
+custom_styles/pressed = SubResource( 15 )
+custom_styles/normal = SubResource( 16 )
+text = "Ok"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="PopupDialog"]
+show_behind_parent = true
+margin_right = 700.0
+margin_bottom = 257.0
+custom_styles/normal = SubResource( 18 )
+
+[node name="Som" type="Button" parent="."]
+margin_left = 479.43
+margin_top = 32.3352
+margin_right = 521.43
+margin_bottom = 70.3352
+toggle_mode = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/BotaoOFF = SubResource( 19 )
+anims/BotaoON = SubResource( 20 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 513.094, 299.604 )
+current = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 358.471
+margin_top = 561.231
+margin_right = 665.471
+margin_bottom = 580.231
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 21 )
+text = "The    Battle    of    Naruto   &   Sasuke"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" parent="." instance=ExtResource( 10 )]
+margin_left = 1392.66
+margin_top = 564.922
+margin_right = 1699.66
+margin_bottom = 583.922
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_Button_mouse_entered"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]
+[connection signal="finished" from="Music" to="." method="_on_music_finished"]
+[connection signal="mouse_entered" from="Barra_atras3/CheckBox" to="." method="_on_CheckBox_mouse_entered"]
+[connection signal="pressed" from="Barra_atras3/CheckBox" to="." method="_on_CheckBox_pressed"]
+[connection signal="mouse_entered" from="Cadastrar/LinkButton" to="." method="_on_LinkButton_mouse_entered"]
+[connection signal="pressed" from="Cadastrar/LinkButton" to="." method="_on_LinkButton_pressed"]
+[connection signal="mouse_entered" from="PopupDialog/Butt" to="." method="_on_Butt_mouse_entered"]
+[connection signal="pressed" from="PopupDialog/Butt" to="." method="_on_Butt_pressed"]
+[connection signal="pressed" from="Som" to="." method="_on_Som_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

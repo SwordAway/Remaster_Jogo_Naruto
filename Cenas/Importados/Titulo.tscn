@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://fonts/njnaruto.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+outline_size = 2
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="Label2" type="Label"]
+margin_left = 1158.7
+margin_top = 335.617
+margin_right = 1465.7
+margin_bottom = 354.617
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "The    Battle    of    Naruto   &   Sasuke"
+__meta__ = {
+"_edit_use_anchors_": false
+}

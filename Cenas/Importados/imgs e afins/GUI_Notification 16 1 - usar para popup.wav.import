@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/GUI_Notification 16 1 - usar para popup.wav-c427dd3516d3132e6589d8631598f8fd.sample"
+
+[deps]
+
+source_file="res://Cenas/Importados/imgs e afins/GUI_Notification 16 1 - usar para popup.wav"
+dest_files=[ "res://.import/GUI_Notification 16 1 - usar para popup.wav-c427dd3516d3132e6589d8631598f8fd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/selec_personagem.mp3-b4dd0f74ab595ab3cf51a62ecdefa9ea.mp3str"
+
+[deps]
+
+source_file="res://Cenas/Efeitos_sonoros/selec_personagem.mp3"
+dest_files=[ "res://.import/selec_personagem.mp3-b4dd0f74ab595ab3cf51a62ecdefa9ea.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

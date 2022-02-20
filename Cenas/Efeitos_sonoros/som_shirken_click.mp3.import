@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/som_shirken_click.mp3-047fe33657b0005df7eace842fe49439.mp3str"
+
+[deps]
+
+source_file="res://Cenas/Efeitos_sonoros/som_shirken_click.mp3"
+dest_files=[ "res://.import/som_shirken_click.mp3-047fe33657b0005df7eace842fe49439.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

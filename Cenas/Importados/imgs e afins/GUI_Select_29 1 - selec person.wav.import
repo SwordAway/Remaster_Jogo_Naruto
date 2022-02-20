@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/GUI_Select_29 1 - selec person.wav-6788a23c78693979b5a46c1bab3b8ddb.sample"
+
+[deps]
+
+source_file="res://Cenas/Importados/imgs e afins/GUI_Select_29 1 - selec person.wav"
+dest_files=[ "res://.import/GUI_Select_29 1 - selec person.wav-6788a23c78693979b5a46c1bab3b8ddb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

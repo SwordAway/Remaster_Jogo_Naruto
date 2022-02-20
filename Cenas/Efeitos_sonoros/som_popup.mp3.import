@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/som_popup.mp3-38fec8e5e468eb69b9c161463fbc09c8.mp3str"
+
+[deps]
+
+source_file="res://Cenas/Efeitos_sonoros/som_popup.mp3"
+dest_files=[ "res://.import/som_popup.mp3-38fec8e5e468eb69b9c161463fbc09c8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/som_pause.mp3-3e36bf2205a245661a0518b3d71639ff.mp3str"
+
+[deps]
+
+source_file="res://Cenas/Efeitos_sonoros/som_pause.mp3"
+dest_files=[ "res://.import/som_pause.mp3-3e36bf2205a245661a0518b3d71639ff.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

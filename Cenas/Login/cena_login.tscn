@@ -1,0 +1,449 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://Cenas/Login/imagens/Tela de Bem Vindo.png" type="Texture" id=1]
+[ext_resource path="res://Cenas/Importados/imgs e afins/neruto.png" type="Texture" id=2]
+[ext_resource path="res://MouseCima.tres" type="StyleBox" id=3]
+[ext_resource path="res://MouseClick.tres" type="StyleBox" id=4]
+[ext_resource path="res://MouseNormal.tres" type="StyleBox" id=5]
+[ext_resource path="res://Cenas/Login/script_login.gd" type="Script" id=6]
+[ext_resource path="res://MouseDesabilitado.tres" type="StyleBox" id=7]
+[ext_resource path="res://Cenas/Fonte/njnaruto.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://Cenas/Login/imagens/Olho_aberto.png" type="Texture" id=9]
+[ext_resource path="res://Cenas/Login/imagens/Olho_fechado.png" type="Texture" id=10]
+[ext_resource path="res://Cenas/Efeitos_sonoros/selec_personagem.mp3" type="AudioStream" id=11]
+[ext_resource path="res://Cenas/Efeitos_sonoros/som_popup.mp3" type="AudioStream" id=12]
+[ext_resource path="res://Cenas/Efeitos_sonoros/som_shirken_click.mp3" type="AudioStream" id=13]
+[ext_resource path="res://Cenas/Efeitos_sonoros/musica_login.mp3" type="AudioStream" id=14]
+[ext_resource path="res://Cenas/Imagens_geral/icone_som.png" type="Texture" id=15]
+[ext_resource path="res://Cenas/Imagens_geral/icone_sem_som.png" type="Texture" id=16]
+
+[sub_resource type="DynamicFont" id=1]
+outline_size = 2
+use_filter = true
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 50
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 50
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 50
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_color = Color( 0.8, 0.8, 0.8, 0 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 26
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_color = Color( 0.8, 0.8, 0.8, 0 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 25
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+extra_spacing_top = 1
+font_data = ExtResource( 8 )
+
+[sub_resource type="AtlasTexture" id=11]
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.968627, 0.647059, 0.333333, 0.701961 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 1, 0.4, 0, 1 )
+corner_radius_top_left = 31
+corner_radius_top_right = 31
+corner_radius_bottom_right = 31
+corner_radius_bottom_left = 31
+
+[sub_resource type="DynamicFont" id=15]
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=16]
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 8 )
+
+[node name="Login" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TelaDeBemVindo" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+scale = Vector2( 1.74387, 1.49068 )
+texture = ExtResource( 1 )
+
+[node name="Logo" type="Sprite" parent="TelaDeBemVindo"]
+position = Vector2( 0, 135.509 )
+scale = Vector2( 0.191709, 0.194219 )
+texture = ExtResource( 2 )
+
+[node name="NomeJogo" type="Label" parent="TelaDeBemVindo"]
+margin_left = -155.975
+margin_top = 204.605
+margin_right = 151.025
+margin_bottom = 223.605
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "The    Battle    of    Naruto   &   Sasuke"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BemVindo" type="Label" parent="."]
+margin_left = 517.0
+margin_top = 165.0
+margin_right = 771.0
+margin_bottom = 254.0
+custom_fonts/font = SubResource( 12 )
+text = "Bem  Vindo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Nome_player" type="Label" parent="BemVindo"]
+margin_left = 48.0
+margin_top = 59.0
+margin_right = 184.0
+margin_bottom = 160.0
+custom_fonts/font = SubResource( 13 )
+text = "Ninja"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContoleTelaDeBemVindo" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TelaLogin" type="Label" parent="ContoleTelaDeBemVindo"]
+margin_left = 429.0
+margin_top = 145.0
+margin_right = 808.0
+margin_bottom = 202.0
+custom_fonts/font = SubResource( 14 )
+text = "Tela  de  Login"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tx_email" type="LineEdit" parent="ContoleTelaDeBemVindo"]
+margin_left = 476.0
+margin_top = 319.0
+margin_right = 805.0
+margin_bottom = 356.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 9 )
+align = 3
+max_length = 150
+placeholder_text = "Exemplo: naruto@gmail.com"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lb_email" type="Label" parent="ContoleTelaDeBemVindo/Tx_email"]
+margin_left = -139.0
+margin_right = 41.001
+margin_bottom = 89.0
+custom_fonts/font = SubResource( 2 )
+text = "E-mail"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BarraAtras" type="Label" parent="ContoleTelaDeBemVindo/Tx_email"]
+show_behind_parent = true
+margin_left = -20.785
+margin_top = 0.0559998
+margin_right = 308.215
+margin_bottom = 37.056
+custom_styles/normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tx_senha" type="LineEdit" parent="ContoleTelaDeBemVindo"]
+margin_left = 476.0
+margin_top = 383.0
+margin_right = 805.0
+margin_bottom = 420.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 10 )
+max_length = 150
+placeholder_text = "Exemplo: naruto1234"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BarraAtras" type="Label" parent="ContoleTelaDeBemVindo/Tx_senha"]
+show_behind_parent = true
+margin_left = -21.142
+margin_right = 307.858
+margin_bottom = 37.0
+custom_styles/normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Lb_senha" type="Label" parent="ContoleTelaDeBemVindo/Tx_senha"]
+margin_left = -139.0
+margin_right = 41.001
+margin_bottom = 89.0
+custom_fonts/font = SubResource( 2 )
+text = "Senha"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Senha_visivel" type="CheckBox" parent="ContoleTelaDeBemVindo"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 755.0
+margin_top = 390.0
+margin_right = 779.0
+margin_bottom = 414.0
+pressed = true
+align = 1
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Olho_aberto" type="Sprite" parent="ContoleTelaDeBemVindo/Senha_visivel"]
+position = Vector2( 11, 12 )
+scale = Vector2( 0.184616, 0.190477 )
+texture = ExtResource( 9 )
+
+[node name="Olho_fechado" type="Sprite" parent="ContoleTelaDeBemVindo/Senha_visivel"]
+position = Vector2( 11, 12 )
+scale = Vector2( 0.184615, 0.190477 )
+texture = ExtResource( 10 )
+
+[node name="Logar" type="Button" parent="ContoleTelaDeBemVindo"]
+margin_left = 561.0
+margin_top = 456.0
+margin_right = 679.0
+margin_bottom = 498.0
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 0.968627, 0.647059, 0.333333, 1 )
+custom_fonts/font = SubResource( 7 )
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/disabled = ExtResource( 7 )
+custom_styles/normal = ExtResource( 5 )
+text = "Entrar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LogarToutch" type="TouchScreenButton" parent="ContoleTelaDeBemVindo"]
+visible = false
+position = Vector2( 561, 456 )
+scale = Vector2( 118, 42 )
+normal = SubResource( 11 )
+shape_visible = false
+visibility_mode = 1
+
+[node name="Offline" type="Button" parent="ContoleTelaDeBemVindo"]
+margin_left = 1019.0
+margin_top = 626.0
+margin_right = 1257.0
+margin_bottom = 668.0
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 0.968627, 0.647059, 0.333333, 1 )
+custom_fonts/font = SubResource( 7 )
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/disabled = ExtResource( 7 )
+custom_styles/normal = ExtResource( 5 )
+text = "Jogar   Offline"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OfflineToutch" type="TouchScreenButton" parent="ContoleTelaDeBemVindo"]
+visible = false
+position = Vector2( 1019, 626 )
+scale = Vector2( 238, 42 )
+normal = SubResource( 11 )
+visibility_mode = 1
+
+[node name="Cadastrar" type="Label" parent="ContoleTelaDeBemVindo"]
+margin_left = 495.0
+margin_top = 429.0
+margin_right = 745.0
+margin_bottom = 451.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = ExtResource( 5 )
+text = " Não possui uma conta ? "
+align = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SiteCadastro" type="LinkButton" parent="ContoleTelaDeBemVindo/Cadastrar"]
+margin_left = 164.0
+margin_top = 4.0
+margin_right = 239.0
+margin_bottom = 18.0
+custom_colors/font_color = Color( 0.768627, 0.380392, 0, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_constants/underline_spacing = 2
+text = "Cadastre-se"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Caixinha" type="Label" parent="ContoleTelaDeBemVindo"]
+margin_left = 1186.0
+margin_top = 36.0
+margin_right = 1239.0
+margin_bottom = 82.0
+custom_styles/normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Check_som" type="CheckBox" parent="ContoleTelaDeBemVindo/Caixinha"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_right = 53.0
+margin_bottom = 46.0
+pressed = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Com_som" type="Sprite" parent="ContoleTelaDeBemVindo/Caixinha/Check_som"]
+position = Vector2( 27.9999, 23 )
+scale = Vector2( 0.0428572, 0.0367347 )
+texture = ExtResource( 15 )
+
+[node name="Sem_som" type="Sprite" parent="ContoleTelaDeBemVindo/Caixinha/Check_som"]
+visible = false
+position = Vector2( 26.5, 23 )
+scale = Vector2( 0.0276042, 0.0239583 )
+texture = ExtResource( 16 )
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+volume_db = -15.0
+
+[node name="Som_selec" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -10.0
+
+[node name="Som_popup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+volume_db = -10.0
+
+[node name="Som_press" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+volume_db = -10.0
+
+[node name="Popup" type="Popup" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -317.0
+margin_top = -84.0
+margin_right = 275.0
+margin_bottom = 156.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Caixa" type="Label" parent="Popup"]
+margin_right = 592.0
+margin_bottom = 240.0
+custom_styles/normal = SubResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Aviso" type="Label" parent="Popup"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -126.0
+margin_top = -56.5
+margin_right = 126.0
+margin_bottom = -37.5
+custom_fonts/font = SubResource( 15 )
+text = "Email   ou   Senha    Invalidos !!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fechar_popup" type="Button" parent="Popup"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -48.5
+margin_top = 3.5
+margin_right = 48.5
+margin_bottom = 30.5
+custom_colors/font_color_pressed = Color( 0.968627, 0.647059, 0.333333, 1 )
+custom_fonts/font = SubResource( 16 )
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/disabled = ExtResource( 7 )
+custom_styles/normal = ExtResource( 5 )
+text = "ok"
+
+[connection signal="pressed" from="ContoleTelaDeBemVindo/Senha_visivel" to="." method="_on_Senha_visivel_pressed"]
+[connection signal="mouse_entered" from="ContoleTelaDeBemVindo/Logar" to="." method="_on_Logar_mouse_entered"]
+[connection signal="pressed" from="ContoleTelaDeBemVindo/Logar" to="." method="_on_Logar_pressed"]
+[connection signal="pressed" from="ContoleTelaDeBemVindo/LogarToutch" to="." method="_on_LogarToutch_pressed"]
+[connection signal="mouse_entered" from="ContoleTelaDeBemVindo/Offline" to="." method="_on_Offline_mouse_entered"]
+[connection signal="pressed" from="ContoleTelaDeBemVindo/Offline" to="." method="_on_Offline_pressed"]
+[connection signal="pressed" from="ContoleTelaDeBemVindo/OfflineToutch" to="." method="_on_OfflineToutch_pressed"]
+[connection signal="mouse_entered" from="ContoleTelaDeBemVindo/Cadastrar/SiteCadastro" to="." method="_on_SiteCadastro_mouse_entered"]
+[connection signal="pressed" from="ContoleTelaDeBemVindo/Cadastrar/SiteCadastro" to="." method="_on_SiteCadastro_pressed"]
+[connection signal="pressed" from="ContoleTelaDeBemVindo/Caixinha/Check_som" to="." method="_on_Check_som_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_HTTPRequest_request_completed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="mouse_entered" from="Popup/Fechar_popup" to="." method="_on_Fechar_popup_mouse_entered"]
+[connection signal="pressed" from="Popup/Fechar_popup" to="." method="_on_Fechar_popup_pressed"]
